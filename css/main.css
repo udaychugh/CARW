@@ -200,7 +200,7 @@ ul li, ol li {
 .section-title:after {
     content: "";
     position: absolute;
-    background-image: url(../img/background/title.png);
+    background-image: url(../images/titlebg.png);
     background-size: contain;
     padding: 43px;
     background-repeat: no-repeat;
@@ -444,7 +444,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 	background-repeat: no-repeat;
 }
 .banner_bg{
-	background-image: url(../img/background/bg.jpg);
+	background-image: url(../images/banner.jpg);
 	background-size: cover;
 	background-position: center center;
 	position: relative;

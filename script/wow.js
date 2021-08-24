@@ -1,11 +1,14 @@
 (function () {
-    var Util, __bind = function (fn, me) {
-        return function () {
-            return fn.apply(me, arguments);
+    var Util,
+        __bind = function (fn, me) {
+            return function () {
+                return fn.apply(me, arguments);
+            };
         };
-    };
+
     Util = (function () {
         function Util() {}
+
         Util.prototype.extend = function (custom, defaults) {
             var key, value;
             for (key in custom) {
@@ -16,11 +19,15 @@
             }
             return defaults;
         };
+
         Util.prototype.isMobile = function (agent) {
             return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
         };
+
         return Util;
+
     })();
+
     this.WOW = (function () {
         WOW.prototype.defaults = {
             boxClass: 'wow',
@@ -39,6 +46,7 @@
             this.scrolled = true;
             this.config = this.util().extend(options, this.defaults);
         }
+
         WOW.prototype.init = function () {
             var _ref;
             this.element = window.document.documentElement;
@@ -55,6 +63,7 @@
                 }
             }
         };
+
         WOW.prototype.start = function () {
             var box, _i, _len, _ref;
             _ref = this.boxes;
@@ -66,6 +75,7 @@
             window.addEventListener('resize', this.scrollHandler, false);
             return this.interval = setInterval(this.scrollCallback, 50);
         };
+
         WOW.prototype.stop = function () {
             window.removeEventListener('scroll', this.scrollHandler, false);
             window.removeEventListener('resize', this.scrollHandler, false);
@@ -73,10 +83,12 @@
                 return clearInterval(this.interval);
             }
         };
+
         WOW.prototype.show = function (box) {
             this.applyStyle(box);
             return box.className = "" + box.className + " " + this.config.animateClass;
         };
+
         WOW.prototype.applyStyle = function (box, hidden) {
             var delay, duration, iteration;
             duration = box.getAttribute('data-wow-duration');
@@ -84,6 +96,7 @@
             iteration = box.getAttribute('data-wow-iteration');
             return box.setAttribute('style', this.customStyle(hidden, duration, delay, iteration));
         };
+
         WOW.prototype.resetStyle = function () {
             var box, _i, _len, _ref, _results;
             _ref = this.boxes;
@@ -94,6 +107,7 @@
             }
             return _results;
         };
+
         WOW.prototype.customStyle = function (hidden, duration, delay, iteration) {
             var style;
             style = hidden ? "visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;" : "visibility: visible;";
@@ -108,9 +122,11 @@
             }
             return style;
         };
+
         WOW.prototype.scrollHandler = function () {
             return this.scrolled = true;
         };
+
         WOW.prototype.scrollCallback = function () {
             var box;
             if (this.scrolled) {
@@ -137,6 +153,7 @@
                 }
             }
         };
+
         WOW.prototype.offsetTop = function (element) {
             var top;
             top = element.offsetTop;
@@ -145,6 +162,7 @@
             }
             return top;
         };
+
         WOW.prototype.isVisible = function (box) {
             var bottom, offset, top, viewBottom, viewTop;
             offset = box.getAttribute('data-wow-offset') || this.config.offset;
@@ -154,12 +172,17 @@
             bottom = top + box.clientHeight;
             return top <= viewBottom && bottom >= viewTop;
         };
+
         WOW.prototype.util = function () {
             return this._util || (this._util = new Util());
         };
+
         WOW.prototype.disabled = function () {
             return this.config.mobile === false && this.util().isMobile(navigator.userAgent);
         };
+
         return WOW;
+
     })();
+
 }).call(this);
