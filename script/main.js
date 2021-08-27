@@ -115,3 +115,21 @@
     });
 
 }(jQuery));
+
+
+
+// menu hover
+
+$('.dropdown').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
+});
+
+
+//news alert box close
+$('#crossitnow').click(function(){
+    $('#mybox').css("display", "none");
+});
+
+$('#closeitnow').click(function(){
+    $('#mybox').css("display", "none");
+})
