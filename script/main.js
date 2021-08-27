@@ -8,6 +8,7 @@
    MixitUp
    ========================================================================== */
         $('#portfolio').mixItUp();
+        $('#marqueenew').css("display", "none");
 
         /* 
          One Page Navigation & wow js
@@ -36,9 +37,14 @@
         $(window).on('scroll', function () {
             if ($(window).scrollTop() > 100) {
                 $('.site-navigation, .header-white, .header').addClass('navbar-fixed');
+                $('#marqueenew').css("display", "flex");
             } else {
                 $('.site-navigation, .header-white, .header').removeClass('navbar-fixed');
+                $('#marqueenew').css("display", "none");
             }
+            
+            
+            
         });
         /*END MENU JS*/
 
@@ -127,7 +133,7 @@ $('.dropdown').hover(function(){
 
 //news alert box close
 $('#crossitnow').click(function(){
-    $('#mybox').css("display", "none");
+    $('#marqueenew').css("display", "none");
 });
 
 $('#closeitnow').click(function(){
