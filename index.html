@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/box.css">
 
     <!--Favicon for this site -->
     <link rel="icon" href="images/calogo.png" />
@@ -44,7 +46,7 @@
 
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    
+
     <link rel="stylesheet" href="css/pricing.css">
 
     <!-- Responsive Style -->
@@ -67,6 +69,22 @@
         </div>
     </div>
     <!--END PRELOADER -->
+    
+    
+    <!-- News Box alerts -->
+    <div class="mybox" id="mybox">
+        <div class="dislpaybox">
+            <div class="boxheader">
+                <h2>Today's News</h2>
+                <i class="fas fa-times" id="crossitnow"></i>
+            </div>
+            <div class="boxcontent">
+                <img src="https://elegalmetrology.jharkhand.gov.in/japnet/images/news.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quae aspernatur, impedit omnis modi adipisci repellat provident animi nihil sint!</p>
+                <button class="btn btn-common" id="closeitnow">Close</button>
+            </div>
+        </div>
+    </div>
 
     <!-- START NAVBAR -->
     <nav class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded site-navigation">
@@ -531,198 +549,37 @@
 
     <!-- START PRICING -->
     <div id="blog" class="blog-area section-padding">
-        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Pricing</h2>
-        <div id="generic_price_table">
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            
-                        </div>
+        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">My Articles</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+                    <div class="single_blog">
+                        <img src="https://getmasum.com/html-preview/abdur-rahman/Mira/assets/img/blog/1.jpg" class="img-fluid" alt="" />
+                        <h5 class="date">26 Aug 2021</h5>
+                        <h2>Top Best Exclusive Mockup</h2>
+                        <span class="author">By: Mr. Henry</span>
+                        <span class="comment"><i class="fa fa-comment"></i> 21 Comment</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim.</p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
                     </div>
                 </div>
-                <div class="container">
-
-                    <!--BLOCK ROW START-->
-                    <div class="row">
-                        <div class="col-md-4">
-
-                            <!--PRICE CONTENT START-->
-                            <div class="generic_content clearfix">
-
-                                <!--HEAD PRICE DETAIL START-->
-                                <div class="generic_head_price clearfix">
-
-                                    <!--HEAD CONTENT START-->
-                                    <div class="generic_head_content clearfix">
-
-                                        <!--HEAD START-->
-                                        <div class="head_bg"></div>
-                                        <div class="head">
-                                            <span>Basic</span>
-                                        </div>
-                                        <!--//HEAD END-->
-
-                                    </div>
-                                    <!--//HEAD CONTENT END-->
-
-                                    <!--PRICE START-->
-                                    <div class="generic_price_tag clearfix">
-                                        <span class="price">
-                                            <span class="sign">$</span>
-                                            <span class="currency">99</span>
-                                            <span class="cent">.99</span>
-                                            <span class="month">/MON</span>
-                                        </span>
-                                    </div>
-                                    <!--//PRICE END-->
-
-                                </div>
-                                <!--//HEAD PRICE DETAIL END-->
-
-                                <!--FEATURE LIST START-->
-                                <div class="generic_feature_list">
-                                    <ul>
-                                        <li><span>4</span> days delivery</li>
-                                        <li><span></span> Tax Reporting</li>
-                                        <li><span></span> Tax Return filling</li>
-                                        <li><span></span> Tax Planning and Advisory</li>
-                                        <li><span>24/7</span> Support</li>
-                                    </ul>
-                                </div>
-                                <!--//FEATURE LIST END-->
-
-                                <!--BUTTON START-->
-                                <div class="generic_price_btn clearfix">
-                                    <a class="" href="">Select</a>
-                                </div>
-                                <!--//BUTTON END-->
-
-                            </div>
-                            <!--//PRICE CONTENT END-->
-
-                        </div>
-
-                        <div class="col-md-4">
-
-                            <!--PRICE CONTENT START-->
-                            <div class="generic_content active clearfix">
-
-                                <!--HEAD PRICE DETAIL START-->
-                                <div class="generic_head_price clearfix">
-
-                                    <!--HEAD CONTENT START-->
-                                    <div class="generic_head_content clearfix">
-
-                                        <!--HEAD START-->
-                                        <div class="head_bg"></div>
-                                        <div class="head">
-                                            <span>Standard</span>
-                                        </div>
-                                        <!--//HEAD END-->
-
-                                    </div>
-                                    <!--//HEAD CONTENT END-->
-
-                                    <!--PRICE START-->
-                                    <div class="generic_price_tag clearfix">
-                                        <span class="price">
-                                            <span class="sign">$</span>
-                                            <span class="currency">199</span>
-                                            <span class="cent">.99</span>
-                                            <span class="month">/MON</span>
-                                        </span>
-                                    </div>
-                                    <!--//PRICE END-->
-
-                                </div>
-                                <!--//HEAD PRICE DETAIL END-->
-
-                                <!--FEATURE LIST START-->
-                                <div class="generic_feature_list">
-                                    <ul>
-                                        <li><span>5</span> days delivery</li>
-                                        <li><span></span> Tax Reporting</li>
-                                        <li><span></span> Tax Return filling</li>
-                                        <li><span></span> Tax Planning and Advisory</li>
-                                        <li><span>24/7</span> Support</li>
-                                    </ul>
-                                </div>
-                                <!--//FEATURE LIST END-->
-
-                                <!--BUTTON START-->
-                                <div class="generic_price_btn clearfix">
-                                    <a class="" href="">Select</a>
-                                </div>
-                                <!--//BUTTON END-->
-
-                            </div>
-                            <!--//PRICE CONTENT END-->
-
-                        </div>
-                        <div class="col-md-4">
-
-                            <!--PRICE CONTENT START-->
-                            <div class="generic_content clearfix">
-
-                                <!--HEAD PRICE DETAIL START-->
-                                <div class="generic_head_price clearfix">
-
-                                    <!--HEAD CONTENT START-->
-                                    <div class="generic_head_content clearfix">
-
-                                        <!--HEAD START-->
-                                        <div class="head_bg"></div>
-                                        <div class="head">
-                                            <span>Unlimited</span>
-                                        </div>
-                                        <!--//HEAD END-->
-
-                                    </div>
-                                    <!--//HEAD CONTENT END-->
-
-                                    <!--PRICE START-->
-                                    <div class="generic_price_tag clearfix">
-                                        <span class="price">
-                                            <span class="sign">$</span>
-                                            <span class="currency">299</span>
-                                            <span class="cent">.99</span>
-                                            <span class="month">/MON</span>
-                                        </span>
-                                    </div>
-                                    <!--//PRICE END-->
-
-                                </div>
-                                <!--//HEAD PRICE DETAIL END-->
-
-                                <!--FEATURE LIST START-->
-                                <div class="generic_feature_list">
-                                    <ul>
-                                        <li><span>6</span> days delivery</li>
-                                        <li><span></span> Tax Reporting</li>
-                                        <li><span></span> Tax Return filling</li>
-                                        <li><span></span> Tax Planning and Advisory</li>
-                                        <li><span>24/7</span> Support</li>
-                                    </ul>
-                                </div>
-                                <!--//FEATURE LIST END-->
-
-                                <!--BUTTON START-->
-                                <div class="generic_price_btn clearfix">
-                                    <a class="" href="">Select</a>
-                                </div>
-                                <!--//BUTTON END-->
-
-                            </div>
-                            <!--//PRICE CONTENT END-->
-
-                        </div>
+                <!--- END COL -->
+                <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                    <div class="single_blog">
+                        <img src="https://getmasum.com/html-preview/abdur-rahman/Mira/assets/img/blog/2.jpg" class="img-fluid" alt="" />
+                        <h5 class="date">26 Aug 2021</h5>
+                        <h2>I need Uniqe Mockup Image</h2>
+                        <span class="author">By: Mr. Rajender wadhwa</span>
+                        <span class="comment"><i class="fa fa-comment"></i> 21 Comment</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim.</p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
                     </div>
-                    <!--//BLOCK ROW END-->
-
                 </div>
-            </section>
+                <!--- END COL -->
+            </div>
+            <!--- END ROW -->
         </div>
+        <!--- END CONTAINER -->
 
     </div>
     <!-- END PRICING -->
@@ -861,6 +718,4 @@
     <script src="script/nivo-lightbox.js"></script>
     <script src="script/main.js"></script>
 
-</body>
-
-</html>
+</body></html>
