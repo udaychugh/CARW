@@ -617,6 +617,22 @@ svg {
 	bottom: 10px;
 }
 
+.about-company{
+    margin-top: 50px;
+}
+
+.about-company h3{
+    color: #333;
+}
+
+.about-company h3 span{
+    color: #caa847;
+}
+
+.about-company a{
+    margin-top: 20px;    
+}
+
 /*================================================
 FunFacts CSS
 =================================================*/
@@ -1235,6 +1251,36 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 #copyright p a:hover {
 	color: #caa847;
+}
+
+.give-them-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.first-col{
+    display: flex;
+    
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+.first-col a{
+    color: white;
+}
+
+.first-col a:hover{
+    color: #caa847;
+}
+
+.makeBox{
+    background-color: #caa847;
+    border: 2px solid transparent;
+    margin-right: 10px;
+    font-size: 22px;
 }
 /* ==========================================================================
 11. End Footer Area

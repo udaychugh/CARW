@@ -139,3 +139,28 @@ $('#crossitnow').click(function(){
 $('#closeitnow').click(function(){
     $('#mybox').css("display", "none");
 })
+
+
+$('#object1').click(function(){
+    swal("Preparation of  financial into other country GAAP.", "Jindal Drilling PTE Ltd. (Singapore) \n Kohlar India Pvt. Ltd. (USA Based Company)\n Kohlar India Pvt. Ltd. (USA Based Company)\n Global Ethical Products Pte Ltd. (Singapore)");
+})
+
+$('#object2').click(function(){
+    swal("Some list of clients for whom we are doing certification and valuation works", "Jindal Drilling PTE Ltd. (Singapore) \n \t-Valuation of shares for equity acceptance,  Valuation for purchase of shares, Valuation of assets for exemption certificate under EPCG.\nMaharashtra seamless limited\n\t-Valuation of shares for purchase of shares and FDI.\nLakhani (Group)\n\t-Valuation of shares for merger of two companies of Lakhani group.  Case is before the court.  Valuation of net assets for the merger as well.\nKohlar India Pvt. Ltd. (USA Based Company)\n	\t-Valuation of Net assets and equity shares for FDI.\nTSC Crest South Asia Pvt. Ltd.\n	\t-Valuation of share for FDI, Valuation of assets for IFRS.\nDEV Drilling PTE Ltd.\n	\t-Valuation of shares for purchase shares of foreign company.\nGroup companies of India bulls and many more\n	\t-Valuation of shares for merger of companies.\nSBA Hydro projects pvt. Ltd.\n	\t-Valuation of shares and net assets for return of FDI.\n");
+})
+
+$('#object3').click(function(){
+    swal("Some of the company names are given below:- ", "UDAAN Services Private Limited, \nBlessing Exports.\nTex ‘n’ Nets\nSuper Driling Private Limited\nNGK Trading Company\nMadhura Rubbers");
+})
+
+$('#object4').click(function(){
+    swal("Some of the company names are given below:- ", "Integrated Infosolutions (India) Private Limited\nKrishna Maruti Limited\nM M.Exports (India)\nMatrix Clothing Private Limited\nThomson press India limited\nStarlite industries limited\nFashion Club Global\nIndian Technological Products Private limited\nLT Foods Limited\nJainsons Engineering Private Limited\nShri Primolite\nNKG Infrastructure Limited\nKP Abhresive private limited\nCD International");
+})
+
+$('#object5').click(function(){
+    swal("Some list of clients for whom we are doing certification and valuation works", "Ranbaxy Laboratories limited Now taken over by Sunpharma Industries Limited\n	-Valuation under CCI guidelines, value of shares for foreign investment. \n Valuation of assets for custom declaration.\n Orient craft limited\n	-Valuation for sale of machinery to sister concern.\nCrew Bos products limited\n	-Valuation for sales of assets and liabilities for sale of business.\nMatrix clothings private limited\n	-Valuation under CCI guidelines, valuation of  business for purchase of plant and machinery.\nDelhi duty free services private limited (GMR group company)\n	-Valuation for sale of equity shares, valuation for custom declaration\n");
+})
+
+$('#object6').click(function(){
+    swal("Some list of clients for whom we are doing IFRS advisory and valuation works", "Jindal Drilling PTE (Singapore)\nMaharashtra seamless limited\nTSC Crest South Asia Pvt. Ltd.\nDEV Drilling PTE Ltd.\nSBA Hydro power Ltd.\nGVN Fules Private Limited");
+})
